@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> jQuery Tombol Hide dan Show </title>
+        <!-- memanggil file jQuery -->
+        <script src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){ 
+		$(".sembunyi").click(function() {$("#foto").hide("slow")}); //fungsi selector untuk menyembunyikan gambar
+		$(".tampil").click(function() {$("#foto").show("slow")}); //fungsi selector untuk menampilkan gambar
+	    });
+        </script>
+
+    </head>
+    <body>
+        <button class="sembunyi">Sembunyikan</button> <!-- tombol sembunyikan -->
+        <button class="tampil">Tampilkan</button> <!-- tombol tampilkan -->
+        <p><img id = "foto" src="logoupnbaru.png"></p> <!-- gambar yang disembunyikan dan tampilkan -->
+    </body>
+</html>

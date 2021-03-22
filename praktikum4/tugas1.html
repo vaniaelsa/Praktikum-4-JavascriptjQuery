@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title> Tugas 1 </title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){ 
+		$(".sembunyi1").click(function() {$("#foto1").hide("slow")}); //fungsi selector untuk menyembunyikan gambar
+		$(".tampil1").click(function() {$("#foto1").show("slow")}); //fungsi selector untuk menampilkan gambar
+        $(".sembunyi2").click(function() {$("#foto2").hide("slow")});
+		$(".tampil2").click(function() {$("#foto2").show("slow")}); 
+	    $(".sembunyi2").click(function() {$("#foto3").hide("slow")}); 
+		$(".tampil2").click(function() {$("#foto3").show("slow")}); 
+        });
+    </script>
+</head>
+
+<body>
+        <button class="sembunyi1">Sembunyikan</button> <!-- tombol sembunyikan -->
+        <button class="tampil1">Tampilkan</button> <!-- tombol tampilkan -->
+        <p><img id = "foto1" src="elsa.jpg" width="200px" height="200px"></p> <!-- gambar yang disembunyikan dan tampilkan -->
+
+        <button class="sembunyi2">Sembunyikan</button> 
+        <button class="tampil2">Tampilkan</button> 
+        <p><img id = "foto2" src="hutan.jpg" width="200px" height="200px"></p> 
+        <p><img id = "foto3" src="masakan elsa.png" width="200px" height="200px"></p>
+</body>
+</html>

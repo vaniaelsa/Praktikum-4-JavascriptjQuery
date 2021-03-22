@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Tugas 2 </title>
+    <!-- memanggil file jQuery -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#kot1").ready(function(){$(".satu").addClass("div")}); //fungsi selector untuk menampilkan kotak
+			$("#kot1").dblclick(function(){$(".satu").addClass("warna")}); //fungsi selector untuk merubah warna kota setelah double klik
+            $("#kot2").ready(function(){$(".dua").addClass("div")});
+			$("#kot2").dblclick(function(){$(".dua").addClass("warna")});
+            $("#kot3").ready(function(){$(".tiga").addClass("div")});
+			$("#kot3").dblclick(function(){$(".tiga").addClass("warna")});
+            $("#kot4").ready(function(){$(".empat").addClass("div")});
+			$("#kot4").dblclick(function(){$(".empat").addClass("warna")});
+		});
+    </script>
+
+    <style type="text/css">
+    /* mendesain tampilan kotak sebelum di klik */
+        .div {
+            width:120px;
+			height:120px;
+			background:yellow;
+			display: inline-block;
+			margin-left: 10px;
+            } 
+           
+    /* mendesain tampilan kotak sesudah di klik */
+        .warna {
+            width: 120px;
+            height: 120px;
+            background-color: red;
+            display: inline-block;
+            margin-left:10px;
+            	 
+            }
+        
+    </style>
+</head>
+
+<body>
+    <p>Klik 2x pada setiap kotak untuk mengubah warnanya</p>
+    <p>
+        <!-- menampilkan kotak -->
+        <div id= "kot1" class="satu"></div> 
+        <div id= "kot2" class="dua"></div>
+        <div id= "kot3" class="tiga"></div>
+        <div id= "kot4" class="empat"></div>
+    </p>     
+</body>
+</html>

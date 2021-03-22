@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Tugas 3 </title>
+    <!-- memanggil file jQuery -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".fadein").click(function(){$("#kotak").fadeIn("slow")}); //memberi efect fadeIn atau menampilkan elemen HTML
+		$(".fadeout").click(function(){$("#kotak").fadeOut("slow")}); //memberi efect fadeOut atau menghilangkan elemen HTML
+		$(".fadeto").click(function(){$("#kotak").fadeTo("slow",0.3)}); //memberi efect fadeTo atau tranparansi elemen HTML
+    });
+      
+    </script>
+
+    <!-- mendesain tampilan kotak -->
+    <style type="text/css">
+        #kotak { 
+            width: 300px; 
+            height: 200px; 
+            background-color:yellow; 
+            }
+    </style>
+</head>
+
+<body>
+    <!-- menampilkan kotak -->
+    <div id="kotak"></div> 
+    <br>
+    <br>
+    <!-- menampilkan tombol  -->
+    <button class="fadein"> Fade In </button> 
+    <button class="fadeout"> Fade Out </button> 
+    <button class="fadeto"> Fade To 0.3 </button> 
+</body>
+
+</html>
